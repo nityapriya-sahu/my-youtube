@@ -81,3 +81,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         - VideoContainer
         - VideoCard
 -->
+
+<!-- <div className="">
+      <div style={{ background: "#1A73E8" }}>1</div>
+      <div style={{ background: "#FF9800" }}>2</div>
+      <div style={{ background: "#F5F5F5" }}>3</div>
+      <br />
+      <br />
+      <br />
+      <div style={{ background: "#009688" }}>1</div>
+      <div style={{ background: "#673AB7" }}>2</div>
+      <div style={{ background: "#ECEFF1" }}>3</div>
+      <br />
+      <br />
+      <br />
+      <div style={{ background: "#333333" }}>1</div>
+      <div style={{ background: "#FF5252" }}>2</div>
+      <div style={{ background: "#E0E0E0" }}>3</div>
+    </div> -->
