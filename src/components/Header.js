@@ -6,6 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
+import Yt_Logo from "../yt_logo-rbg.png";
 const Header = () => {
   const dispatch = useDispatch();
 
@@ -13,17 +14,17 @@ const Header = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col shadow-md py-4 px-4 bg-white sticky top-0 w-full">
-      <div className="col-span-1 flex items-center gap-4">
+    <div className="grid grid-flow-col shadow-md py-3 px-4 bg-white sticky top-0 w-full">
+      <div className="col-span-1 flex items-center">
         <RxHamburgerMenu
-          size={20}
+          size={30}
           onClick={() => toggleMenuHandler()}
-          className="cursor-pointer"
+          className="cursor-pointer hover:bg-gray p-1 rounded-full"
         />
         <img
           alt="youtube-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
-          className="h-8 w-32 cursor-pointer"
+          src={Yt_Logo}
+          className="h-12 w-32 cursor-pointer object-cover"
         />
       </div>
       <div className="col-span-10 flex items-center justify-center ">

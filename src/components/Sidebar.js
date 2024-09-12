@@ -10,6 +10,7 @@ import { SiYoutubegaming } from "react-icons/si";
 import { FaNewspaper } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
@@ -19,10 +20,12 @@ const Sidebar = () => {
   return (
     <div className="col-span-1">
       <ul className="flex flex-col gap-3">
-        <li className="flex gap-4 items-center p-2 rounded-md cursor-pointer hover:bg-green hover:text-white hover:font-semibold group">
-          <IoMdHome className="text-green group-hover:text-white" />
-          <span className="text-black group-hover:text-white">Home</span>
-        </li>
+        <Link to="/">
+          <li className="flex gap-4 items-center p-2 rounded-md cursor-pointer hover:bg-green hover:text-white hover:font-semibold group">
+            <IoMdHome className="text-green group-hover:text-white" />
+            <span className="text-black group-hover:text-white">Home</span>
+          </li>
+        </Link>
         <li className="flex gap-4 items-center p-2 rounded-md cursor-pointer hover:bg-green hover:text-white hover:font-semibold group">
           <SiYoutubeshorts className="text-green group-hover:text-white" />
           <span className="text-black group-hover:text-white">Shorts</span>
